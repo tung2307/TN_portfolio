@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha384-KoPNr+oRPQzgN+OZLJzZntYot7H8j03ynxJ9D9gR/EuLvIKaM5hM/yJe+Vn3M5pZ" crossorigin="anonymous">
+  </head>
+    
+  <body>
+    <nav class="navbar">
+        <ul>
+          <li><a href="#section1">Home</a></li>
+          <li><a href="#section2">About</a></li>
+          <li><a href="#section3">Skills</a></li>
+          <li><a href="#contact-form">Contact Me</a></li>
+          <li><a href="Resume.pdf">Resume</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+      <div>
+        <div class="section" id="section1">
+          <h1>Hi, I'm Tung Nguyen</h1>
+          <h3 class="subtitle">A Software Engineer</h3>
+        </div>
+        <div class="section" id="section2">
+            <div class="half-left">
+                <h1 styles="margin-bottom: 10px;">About Me</h1>
+            </div>
+            <div class="half-right">
+                <div class="card">
+                    <div class="card-content"> 
+                      <p>I'm in Senior years and will graduate in Spring 2023. I'm pursuing a Bachelor's degree in Computer Science and looking for an internship opportunity. With my knowledge and experience at CCSF and SFSU, I will bring my best to successful contributions in the field.</p>
+                    </div>
+                  </div>
+                  
+            </div>
+        
+        </div>
+        <div class="section" id="section3">
+          <h1 id="skills">Skills</h1>
+            <div class="progress-bar">
+              <div class="inner-bar">
+                <div class="progress" style="width: 50%;">
+                  <span class="skill">HTML</span>
+                  <span class="percent">50%</span>
+                </div>
+              </div>
+                
+              <div class="inner-bar">
+                <div class="progress" style="width: 40%;">
+                  <span class="skill">CSS</span>
+                  <span class="percent">40%</span>
+                </div>
+              </div>
+              <div class="inner-bar">
+                <div class="progress" style="width: 50%;">
+                  <span class="skill">JavaScript</span>
+                  <span class="percent">50%</span>
+                </div>
+                </div>
+                <div class="inner-bar">
+                <div class="progress" style="width: 60%;">
+                    <span class="skill">NodeJS</span>
+                    <span class="percent">60%</span>
+                  </div>
+                </div>
+                <div class="inner-bar">
+                  <div class="progress" style="width: 50%;">
+                    <span class="skill">Java</span>
+                    <span class="percent">50%</span>
+                  </div>
+                </div>
+                <div class="inner-bar">
+                  <div class="progress" style="width: 50%;">
+                    <span class="skill">SQL</span>
+                    <span class="percent">50%</span>
+                  </div>
+                </div>
+                </div>
+                <p class="skill-note"><strong>* NOTE: These percentages are based on my experience using the languages.</strong></p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="section" id="contact-form">
+            <div class="half-left">
+                <h1 styles="margin-bottom: 10px;">Contact Me</h1>
+            </div>
+            <div class="half-right">
+                <form id="form" action="sendemail.php" method="post">
+                    <div class="form-group">
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="subject">Subject:</label>
+                      <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Message:</label>
+                      <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" id="submit-btn">Submit</button>
+                  </form>
+            </div>
+            
+        </div>
+          
+      </div>
+    </div>
+    <script scr="sendemail.php"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-HfX0EoNZV7fcz5c5uNv6NfU6sO+OS1/3GHJcbvHiasLGUtr8gza6RQo/2kBlT+6nN1N8+jnVcKjvvXtnXZ7Hg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js" integrity="sha384-kjHwIy8foWt0p/+tL3G9vepCkYlHCe/w7s/S3TzT2wteTqDI3WojcCyuOh7h5D2Q" crossorigin="anonymous"></script>
+  </body>
+  <footer>
+    <p>© 2023 Bonamark. All rights reserved.</p>
+    <h3>Tung Nguyen</h3>
+  </footer>
+</html>
