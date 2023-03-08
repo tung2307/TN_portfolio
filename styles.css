@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Avenir Next';
+  src: url("http://www.yoursite.com/fonts/Avenir_Next.otf");
 }
 
 html {
